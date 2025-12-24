@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="google-adsense-account" content="ca-pub-9061415637756624">
+<meta charset="UTF-8">
+<title>Daily Utility Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ADSENSE -->
+<script async
+ src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX"
+ crossorigin="anonymous"></script>
+
+<style>
+body{font-family:Arial;background:#f5f6fa;margin:0}
+header,footer{background:#111;color:#fff;text-align:center;padding:15px}
+main{max-width:900px;margin:auto;padding:20px}
+.tool{background:#fff;padding:15px;border-radius:10px;margin-bottom:20px}
+input,button{padding:10px;margin-top:8px;width:100%}
+button{background:#00b894;color:#fff;border:none;border-radius:6px}
+.result{margin-top:10px;font-weight:bold}
+nav a{color:#0f0;margin:0 8px;text-decoration:none}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Daily Utility Tools</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="privacy.html">Privacy</a>
+<a href="contact.html">Contact</a>
+<a href="terms.html">Terms</a>
+</nav>
+</header>
+
+<!-- TOP AD -->
+<ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-XXXXXXXXXXXX"
+ data-ad-slot="1111111111"
+ data-ad-format="auto"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+
+<main>
+
+<div class="tool">
+<h3>Calculator</h3>
+<input id="a" type="number" placeholder="Number 1">
+<input id="b" type="number" placeholder="Number 2">
+<button onclick="calc()">Add</button>
+<div class="result" id="r"></div>
+</div>
+
+<div class="tool">
+<h3>Age Calculator</h3>
+<input id="dob" type="date">
+<button onclick="age()">Calculate Age</button>
+<div class="result" id="ageResult"></div>
+</div>
+
+<!-- BOTTOM AD -->
+<ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-XXXXXXXXXXXX"
+ data-ad-slot="2222222222"
+ data-ad-format="auto"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+
+</main>
+
+<footer>
+© 2025 Daily Utility Tools
+</footer>
+
+<script>
+function calc(){
+  r.innerText = "Result: " + (Number(a.value)+Number(b.value));
+}
+function age(){
+  const d=new Date(dob.value);
+  const diff=new Date()-d;
+  ageResult.innerText="Age: "+Math.floor(diff/31557600000)+" years";
+}
+</script>
+
+</body>
+</html>
